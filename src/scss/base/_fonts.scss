@@ -1,13 +1,36 @@
+@font-face {
+	font-family: 'LarsseitRegular';
+	src: url('./../../assets/fonts/Larsseit.eot');
+	src: local('Larsseit'),
+		 url('./../../assets/fonts/Larsseit.eot?#iefix') format('embedded-opentype'),
+		 url('./../../assets/fonts/Larsseit.woff2') format('woff2'),
+		 url('./../../assets/fonts/Larsseit.woff') format('woff'),
+		 url('./../../assets/fonts/Larsseit.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
 
+@font-face {
+	font-family: 'LarsseitBold';
+	src: url('./../../assets/fonts/Larsseit-Bold.eot');
+	src: local('Larsseit Bold'), local('Larsseit-Bold'),
+		 url('./../../assets/fonts/Larsseit-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('./../../assets/fonts/Larsseit-Bold.woff2') format('woff2'),
+		 url('./../../assets/fonts/Larsseit-Bold.woff') format('woff'),
+		 url('./../../assets/fonts/Larsseit-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 
-// @font-face {
-// 	font-family: 'KayakSansBold';
-// 	src: url('@{way-fonts}/kayak-sans-bold.eot');
-// 	src: local('☺'), 
-// 	url('@{way-fonts}/kayak-sans-bold.woff') format('woff'), 
-// 	url('@{way-fonts}/kayak-sans-bold.ttf') format('truetype'), 
-// 	url('@{way-fonts}/kayak-sans-bold.svg') format('svg');
-// 	font-weight: 700;
-// 	font-style: normal;
-// }
+@font-face {
+    font-family: 'LarsseitMedium';
+    src: url('./../../assets/fonts/Larsseit-Medium.eot');
+    src: local('Larsseit Medium'), local('Larsseit-Medium'),
+        url('./../../assets/fonts/Larsseit-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../../assets/fonts/Larsseit-Medium.woff2') format('woff2'),
+        url('./../../assets/fonts/Larsseit-Medium.woff') format('woff'),
+        url('./../../assets/fonts/Larsseit-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
 

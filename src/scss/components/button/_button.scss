@@ -1,0 +1,9 @@
+.button {
+	@include size(150px,50px);
+
+	@include font5(14px,16px,"$LarsseitBold",$sub-color,center);
+	text-transform: uppercase;
+
+	background: #62D0DF;
+	border-radius: 50px;
+}

@@ -1,0 +1,4 @@
+.logo {
+	@include font4(24px,27px,$LarsseitBold,$color-logo);
+	letter-spacing: -0.035em;
+}

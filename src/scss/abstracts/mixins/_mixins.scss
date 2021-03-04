@@ -1,0 +1,17 @@
+@mixin wh($w, $h) {
+	width: $w;
+	height: $h;
+}
+
+@mixin font($font-size,$font-family,$color,$text-align:left) {
+	font-size:$font-size ;
+	font-family:$font-family;
+	color: $color;
+	text-align:$text-align;
+}
+
+@mixin flex-j-a($value,$value1){
+	display: flex;
+	justify-content: $value;
+	align-items: $value1;
+}

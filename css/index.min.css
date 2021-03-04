@@ -1,0 +1,291 @@
+@font-face {
+  font-family: LarsseitRegular;
+  src: url(../../assets/fonts/Larsseit.eot);
+  src: local("Larsseit"),url(../../assets/fonts/Larsseit.eot?#iefix) format("embedded-opentype"),url(../../assets/fonts/Larsseit.woff2) format("woff2"),url(../../assets/fonts/Larsseit.woff) format("woff"),url(../../assets/fonts/Larsseit.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LarsseitBold;
+  src: url(../../assets/fonts/Larsseit-Bold.eot);
+  src: local("Larsseit Bold"),local("Larsseit-Bold"),url(../../assets/fonts/Larsseit-Bold.eot?#iefix) format("embedded-opentype"),url(../../assets/fonts/Larsseit-Bold.woff2) format("woff2"),url(../../assets/fonts/Larsseit-Bold.woff) format("woff"),url(../../assets/fonts/Larsseit-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: LarsseitMedium;
+  src: url(../../assets/fonts/Larsseit-Medium.eot);
+  src: local("Larsseit Medium"),local("Larsseit-Medium"),url(../../assets/fonts/Larsseit-Medium.eot?#iefix) format("embedded-opentype"),url(../../assets/fonts/Larsseit-Medium.woff2) format("woff2"),url(../../assets/fonts/Larsseit-Medium.woff) format("woff"),url(../../assets/fonts/Larsseit-Medium.ttf) format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:active,
+:focus,
+a:active,
+a:focus {
+  outline: 0;
+}
+
+aside,
+footer,
+header,
+main,
+nav {
+  display: block;
+}
+
+body,
+html {
+  font: 10px/1 LarsseitBold;
+  height: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner,
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+a,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+code,
+kbd,
+samp {
+  font-size: 1em;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.button {
+  font: 14px/16px "$LarsseitBold";
+  width: 150px;
+  height: 50px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #62d0df;
+  border-radius: 50px;
+}
+
+.text {
+  font: 24px/42px LarsseitRegular;
+  color: #22356f;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.logo {
+  font: 24px/27px LarsseitBold;
+  color: #62d0df;
+  letter-spacing: -.035em;
+}
+
+.header--bg {
+  background: url(../assets/images/header/bg.png) 0 0/73% 100% no-repeat;
+}
+
+.header {
+  position: relative;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.header__img {
+  position: absolute;
+  top: -6%;
+  right: 0;
+}
+
+.header__container {
+  height: 100%;
+  padding: 35px 15px 75px;
+  border: 1px solid #000;
+}
+
+.header__top {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__items:not(:last-of-type) {
+  margin-right: 20px;
+}
+
+.header__link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #22356f;
+}
+
+.header__bottom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: calc(100% - 14px);
+}
+
+.header__title {
+  font: 48px/55px LarsseitBold;
+  max-width: 500px;
+  margin: 50px 0 80px;
+  color: #22356f;
+  letter-spacing: -.035em;
+}
+
+.header__text {
+  max-width: 490px;
+}
+
+.header__buttons {
+  margin-top: 65px;
+}
+
+.header__button {
+  font: 16px/23px LarsseitBold;
+  background: #f9b640;
+  letter-spacing: .1em;
+  border-radius: 0;
+}
+
+.header__button--orange {
+  background: transparent;
+  color: #f9b640;
+}
+
+@supports (-webkit-appearance:none) {
+  .header--bg {
+    background: url(../assets/images/header/bg.webp) 0 0/73% 100% no-repeat;
+  }
+}
+
+@media (max-width:1160px) {
+  .container {
+    max-width: 992px;
+  }
+}
+
+@media (max-width:992px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    max-width: 576px;
+  }
+}

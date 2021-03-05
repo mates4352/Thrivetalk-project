@@ -1,0 +1,42 @@
+.thrive {
+	grid-column: 1/ span 5;
+	background-color: #62D0DF;
+
+	@media  screen and (max-width:768px) {
+		grid-column: 1/ span 8;
+	}
+	// .thrive__row
+
+	&__row {
+		display: flex;
+		height: 100%;
+	}
+
+	// .thrive__description
+
+	&__description {
+		@extend %flexCenter;
+		flex-direction: column;
+		max-width: 615px;
+		margin: 0 auto;
+		padding: 25px;
+	}
+
+	// .thrive__title
+
+	&__title {
+		align-self: flex-start;
+		margin: 0 0 95px 0;
+		@include font4(36px,27px,$LarsseitBold,$sub-color);
+		letter-spacing: -0.006em;
+	}
+
+	// .thrive__text
+	&__text {
+		@include font4(24px,35px,$LarsseitBold,$sub-color);
+	}
+	// .thrive__text-span
+	&__text-span{
+		font-family:$LarsseitRegular ;
+	}
+}

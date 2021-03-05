@@ -1,0 +1,6 @@
+.page{
+	display: grid;
+	grid-template-columns: (360px/1440px * 100%) (120px) (95px / 1440px *100%) (155px / 1440px *100%) (195px / 1440px *100%) (45px / 1440px *100%) (120px / 1440px *100%) 1fr;
+	grid-template-rows: min(100vh);
+	grid-auto-rows: minmax(260px,auto);
+}

@@ -13,6 +13,7 @@
 
 
 /*-components-*/
+@import "./components/bem/page";
 @import "./components/button/_button";
 @import "./components/bem/_text";
 @import "./components/bem/_container";
@@ -25,6 +26,8 @@
 
 /*-Content-*/
 @import "layout/_Thrive";
+@import "layout/_Thrive-img";
+
 
 
 /*-footer-*/

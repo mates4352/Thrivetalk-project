@@ -1,17 +1,24 @@
 .header--bg{
 	background:url("#{$way-img}/header/bg.png")  /73% 100%  no-repeat;
+
+	@media  screen and (max-width:768px) {
+		background:url("#{$way-img}/header/bg.png")  /100% 100%  no-repeat;
+	}
 }
 .header {
+	grid-column: 1/span 8;
 	position: relative;
-	min-height: 100vh;
-	height: 100%;
 
 	//header__img
 
 	&__img{
 		position:absolute;
-		top:-6%;
+		top:0;
 		right: 0;
+
+		@media  screen and (max-width:768px) {
+			display: none;
+		}
 	}
 
 	//header__container
@@ -29,11 +36,6 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-	}
-
-	// .header__menu
-
-	&__menu {
 	}
 
 	// .header__list
@@ -58,11 +60,17 @@
 	// .header__bottom
 
 	&__bottom {
-		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		height: calc(100% - 14px) ;
+		height: 100% ;
+
+		position: relative;
+
+		@media  screen and (max-width:768px) {
+			align-items: center;
+			text-align: center;
+		}
 	}
 
 	// .header__title
@@ -72,6 +80,8 @@
 		margin:50px 0 80px 0;
 		@include font4(48px,55px,$LarsseitBold,$main-color);
 		letter-spacing: -0.035em;
+
+		
 	}
 
 	//header__text

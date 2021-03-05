@@ -13,11 +13,17 @@
 
 
 /*-components-*/
-@import "./components/bem/page";
 @import "./components/button/_button";
-@import "./components/bem/_text";
+@import "./components/burger";
+
+/*-components-BEM-*/
+@import "./components/bem/page";
 @import "./components/bem/_container";
+@import "./components/bem/_text";
 @import "./components/bem/_logo";
+
+
+
 
 
 

@@ -29,11 +29,21 @@
 		margin: 0 0 95px 0;
 		@include font4(36px,27px,$LarsseitBold,$sub-color);
 		letter-spacing: -0.006em;
+
+		@media  screen and (max-width:768px) {
+			align-self: center;
+			text-align: center;
+		}
 	}
 
 	// .thrive__text
 	&__text {
 		@include font4(24px,35px,$LarsseitBold,$sub-color);
+
+		@media  screen and (max-width:768px) {
+			align-self: center;
+			text-align: center;
+		}
 	}
 	// .thrive__text-span
 	&__text-span{

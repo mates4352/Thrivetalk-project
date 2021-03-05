@@ -1,4 +1,10 @@
 .logo {
 	@include font4(24px,27px,$LarsseitBold,$color-logo);
 	letter-spacing: -0.035em;
+
+	
+	@media  screen and (max-width:768px) {
+		text-align: center;
+		font-size: 40px;
+	}
 }

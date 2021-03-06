@@ -1,0 +1,46 @@
+.About {
+	grid-column: 1/ span 8;
+	position:relative;
+}
+
+.About__title {
+	position:absolute;
+	top:31%;
+	left:5%;
+
+	@include font4(16px,23px,$LarsseitRegular,$main-color);
+	letter-spacing: 0.06em;
+
+	@media  screen and (max-width:900px) {
+		position:absolute;
+		top:10%;
+		left:50%;
+		transform: translateX(-50%);
+	}
+}
+
+.About__wrapper {
+	max-width:580px;
+	margin: 0 auto;
+	padding:150px 0 25px 0;
+
+	@media  screen and (max-width:900px) {
+		padding:110px 15px 15px ;
+	}
+}
+
+.About__text {
+	margin-bottom: 75px;
+
+	@media  screen and (max-width:900px) {
+	margin-bottom: 45px;
+	text-align: center;
+	}
+}
+
+.About__help {
+	display: block;
+	@include font4(16px,19px,$LarsseitRegular,rgba(34, 53, 111, 0.5));
+	letter-spacing: 0.06em;
+	text-align: center;
+}

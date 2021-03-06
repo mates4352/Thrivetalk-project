@@ -520,6 +520,42 @@ sup {
   object-position: center;
 }
 
+.About {
+  grid-column: 1/span 8;
+  position: relative;
+}
+
+.About__title {
+  position: absolute;
+  top: 31%;
+  left: 5%;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "LarsseitRegular";
+  color: #22356F;
+  letter-spacing: 0.06em;
+}
+
+.About__wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 150px 0 25px 0;
+}
+
+.About__text {
+  margin-bottom: 75px;
+}
+
+.About__help {
+  display: block;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: "LarsseitRegular";
+  color: rgba(34, 53, 111, 0.5);
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
 /*-footer-*/
 
 @supports (-webkit-appearance:none) {
@@ -541,6 +577,30 @@ sup {
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 900px) {
+  .About__title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .About__wrapper {
+    padding: 110px 15px 15px;
+  }
+
+  .About__text {
+    margin-bottom: 45px;
+    text-align: center;
   }
 
 @supports (-webkit-appearance:none) {

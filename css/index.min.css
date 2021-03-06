@@ -469,6 +469,38 @@ sup {
   object-position: center;
 }
 
+.About {
+  grid-column: 1/span 8;
+  position: relative;
+}
+
+.About__title {
+  font: 16px/23px LarsseitRegular;
+  position: absolute;
+  top: 31%;
+  left: 5%;
+  color: #22356f;
+  letter-spacing: .06em;
+}
+
+.About__wrapper {
+  max-width: 580px;
+  margin: 0 auto;
+  padding: 150px 0 25px;
+}
+
+.About__text {
+  margin-bottom: 75px;
+}
+
+.About__help {
+  font: 16px/19px LarsseitRegular;
+  display: block;
+  color: rgba(34,53,111,.5);
+  letter-spacing: .06em;
+  text-align: center;
+}
+
 @supports (-webkit-appearance:none) {
   .header--bg {
     background: url(../assets/images/header/bg.webp) 0 0/73% 100% no-repeat;
@@ -484,6 +516,26 @@ sup {
 @media (max-width:992px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .About__title {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .About__wrapper {
+    padding: 110px 15px 15px;
+  }
+
+  .About__text {
+    margin-bottom: 45px;
+    text-align: center;
   }
 }
 

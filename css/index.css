@@ -346,6 +346,14 @@ sup {
   padding: 0 15px;
 }
 
+.title {
+  font-size: 36px;
+  line-height: 27px;
+  font-family: "LarsseitBold";
+  color: #fff;
+  letter-spacing: -0.006em;
+}
+
 .text {
   font-size: 24px;
   line-height: 42px;
@@ -488,11 +496,6 @@ sup {
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0 0 95px 0;
-  font-size: 36px;
-  line-height: 27px;
-  font-family: "LarsseitBold";
-  color: #fff;
-  letter-spacing: -0.006em;
 }
 
 .thrive__text {
@@ -556,6 +559,78 @@ sup {
   text-align: center;
 }
 
+.Sport {
+  grid-column: 1/span 8;
+}
+
+.Sport__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Sport__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 25%;
+  flex: 0 1 25%;
+  min-height: 360px;
+  text-align: center;
+}
+
+.Sport__column:nth-of-type(1) {
+  background-color: #FFE2DE;
+}
+
+.Sport__column:nth-of-type(2) {
+  background-color: #C4E769;
+}
+
+.Sport__column:nth-of-type(3) {
+  background-color: #62D0DF;
+}
+
+.Sport__column:nth-of-type(4) {
+  background-color: #0052C1;
+}
+
+.Sport_title {
+  display: inline-block;
+  margin-top: 95px;
+  position: relative;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.Sport_title::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.Sport_title::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #E9B730;
+  border-radius: 50%;
+}
+
 /*-footer-*/
 
 @supports (-webkit-appearance:none) {
@@ -577,6 +652,23 @@ sup {
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 992px) {
+  .Sport__row {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .Sport__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 50%;
+    flex: 0 1 50%;
   }
 
 @supports (-webkit-appearance:none) {
@@ -657,6 +749,13 @@ sup {
     grid-column: 1/span 8;
     min-height: 0;
     height: 300px;
+  }
+
+  .Sport__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+    min-height: 260px;
   }
 
 @supports (-webkit-appearance:none) {

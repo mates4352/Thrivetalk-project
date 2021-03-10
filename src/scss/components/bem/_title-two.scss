@@ -1,0 +1,18 @@
+.title-two{
+	@include font4(32px,34px,$LarsseitBold,$sub-color);
+}
+
+.title-two::before{
+	content: "";
+	@include size(9px);
+
+	position: absolute;
+	top: 50%;
+	left: -10%;
+	transform: translateY(-50%);
+
+	background-color: #E9B730;
+	border-radius: 50%;
+}
+
+

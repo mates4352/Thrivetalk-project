@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /*-elements-*/
 
 .header__list.done,
@@ -346,6 +348,27 @@ sup {
   padding: 0 15px;
 }
 
+.title-two {
+  font-size: 32px;
+  line-height: 34px;
+  font-family: "LarsseitBold";
+  color: #fff;
+}
+
+.title-two::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #E9B730;
+  border-radius: 50%;
+}
+
 .title {
   font-size: 36px;
   line-height: 27px;
@@ -577,6 +600,7 @@ sup {
   -ms-flex: 0 1 25%;
   flex: 0 1 25%;
   min-height: 360px;
+  position: relative;
   text-align: center;
 }
 
@@ -600,16 +624,14 @@ sup {
   display: inline-block;
   margin-top: 95px;
   position: relative;
-  font-size: 32px;
-  line-height: 34px;
 }
 
-.Sport_title::after {
+.Sport__column::after {
   content: "";
-  width: 100%;
+  width: 80%;
   height: 1px;
   position: absolute;
-  top: -25px;
+  top: 60px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -617,18 +639,71 @@ sup {
   background-color: #fff;
 }
 
-.Sport_title::before {
+.Сategory {
+  grid-column: 1/span 8;
+}
+
+.Сategory__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.Сategory__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 33.333%;
+  flex: 0 1 33.333%;
+  min-height: 480px;
+  position: relative;
+}
+
+.Сategory__column::after {
   content: "";
-  width: 9px;
-  height: 9px;
+  width: 80%;
+  height: 1px;
   position: absolute;
-  top: 50%;
-  left: -10%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  background-color: #E9B730;
-  border-radius: 50%;
+  top: 70px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #fff;
+}
+
+.Сategory__column:nth-of-type(1) {
+  background-color: #22356F;
+}
+
+.Сategory__column:nth-of-type(2) {
+  background-color: #0052C1;
+}
+
+.Сategory__column:nth-of-type(3) {
+  background-image: url("../../assets/images/Сategory/Nutrition.jpg") 100% 100%/cover no-repeat;
+}
+
+.Сategory__column:nth-of-type(4) {
+  background-color: #62D0DF;
+}
+
+.Сategory__column:nth-of-type(5) {
+  background-color: #DEE1FF;
+}
+
+.Сategory__column:nth-of-type(6) {
+  background-color: #8F00FF;
+}
+
+.Сategory__title {
+  margin-top: 125px;
+  max-width: 160px;
+  margin: 125px 0 0 50px;
+  text-align: center;
 }
 
 /*-footer-*/
@@ -636,6 +711,10 @@ sup {
 @supports (-webkit-appearance:none) {
   .header--bg {
     background: url("../assets/images/header/bg.webp")/73% 100% no-repeat;
+  }
+
+  .Сategory__column:nth-of-type(3) {
+    background-image: url("../../assets/images/Сategory/Nutrition.webp") 100% 100%/cover no-repeat;
   }
 }
 

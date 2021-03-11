@@ -372,11 +372,11 @@ sup {
 }
 
 .title {
-  font-size: 36px;
-  line-height: 27px;
-  font-family: "LarsseitBold";
-  color: #fff;
-  letter-spacing: -0.006em;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "LarsseitRegular";
+  color: #22356F;
+  letter-spacing: 0.06em;
 }
 
 .text {
@@ -384,6 +384,14 @@ sup {
   line-height: 42px;
   font-family: "LarsseitRegular";
   color: #22356F;
+}
+
+.logo {
+  font-size: 24px;
+  line-height: 27px;
+  font-family: "LarsseitBold";
+  color: #62D0DF;
+  letter-spacing: -0.035em;
 }
 
 .logo {
@@ -521,6 +529,11 @@ sup {
   -ms-flex-item-align: start;
   align-self: flex-start;
   margin: 0 0 95px 0;
+  font-size: 36px;
+  line-height: 27px;
+  font-family: "LarsseitBold";
+  color: #fff;
+  letter-spacing: -0.006em;
 }
 
 .thrive__text {
@@ -557,11 +570,6 @@ sup {
   position: absolute;
   top: 31%;
   left: 5%;
-  font-size: 16px;
-  line-height: 23px;
-  font-family: "LarsseitRegular";
-  color: #22356F;
-  letter-spacing: 0.06em;
 }
 
 .About__wrapper {
@@ -705,6 +713,58 @@ sup {
   text-align: left;
 }
 
+.Plans {
+  grid-column: 1/span 8;
+}
+
+.Plans__row {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.Plans__column {
+  padding: 50px;
+  min-height: 240px;
+  width: 33.333%;
+}
+
+.Plans__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.Plans__title {
+  margin-right: auto;
+  margin-bottom: 25px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-size: 28px;
+  line-height: 33px;
+  font-family: "LarsseitRegular";
+  color: #22356F;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.Plans__text {
+  max-width: 300px;
+  margin-right: auto;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgba(34, 53, 111, 0.5);
+}
+
 /*-footer-*/
 
 @supports (-webkit-appearance:none) {
@@ -792,6 +852,11 @@ sup {
     font-size: 40px;
   }
 
+  .logo {
+    text-align: center;
+    font-size: 40px;
+  }
+
   .header--bg {
     background: url("../assets/images/header/bg.png")/100% 100% no-repeat;
   }
@@ -840,6 +905,10 @@ sup {
     width: 50%;
   }
 
+  .Plans__column {
+    width: 50%;
+  }
+
 @supports (-webkit-appearance:none) {
     .header--bg {
       background: url("../assets/images/header/bg.webp")/100% 100% no-repeat;
@@ -860,6 +929,20 @@ sup {
 @media screen and (max-width: 576px) {
   .Сategory__column {
     width: 100%;
+  }
+
+  .Plans__column {
+    width: 100%;
+  }
+
+  .Plans__title {
+    margin: 0 auto 10px auto;
+    text-align: center;
+  }
+
+  .Plans__text {
+    margin: 0 auto;
+    text-align: center;
   }
 
 @supports (-webkit-appearance:none) {

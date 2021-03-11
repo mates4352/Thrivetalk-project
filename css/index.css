@@ -349,6 +349,8 @@ sup {
 }
 
 .title-two {
+  display: inline-block;
+  position: relative;
   font-size: 32px;
   line-height: 34px;
   font-family: "LarsseitBold";
@@ -621,9 +623,7 @@ sup {
 }
 
 .Sport_title {
-  display: inline-block;
   margin-top: 95px;
-  position: relative;
 }
 
 .Sport__column::after {
@@ -644,6 +644,7 @@ sup {
 }
 
 .Сategory__row {
+  margin-top: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -655,9 +656,7 @@ sup {
 }
 
 .Сategory__column {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 1 33.333%;
-  flex: 0 1 33.333%;
+  width: 33.333%;
   min-height: 480px;
   position: relative;
 }
@@ -700,10 +699,10 @@ sup {
 }
 
 .Сategory__title {
-  margin-top: 125px;
   max-width: 160px;
-  margin: 125px 0 0 50px;
-  text-align: center;
+  margin: 125px 0 0 70px;
+  padding-left: 15px;
+  text-align: left;
 }
 
 /*-footer-*/
@@ -837,6 +836,10 @@ sup {
     min-height: 260px;
   }
 
+  .Сategory__column {
+    width: 50%;
+  }
+
 @supports (-webkit-appearance:none) {
     .header--bg {
       background: url("../assets/images/header/bg.webp")/100% 100% no-repeat;
@@ -847,6 +850,16 @@ sup {
 @media (max-width: 768px) {
   .container {
     max-width: 576px;
+  }
+
+@supports (-webkit-appearance:none) {
+
+}
+}
+
+@media screen and (max-width: 576px) {
+  .Сategory__column {
+    width: 100%;
   }
 
 @supports (-webkit-appearance:none) {

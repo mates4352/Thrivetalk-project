@@ -1,4 +1,6 @@
 .title-two{
+	display: inline-block;
+	position: relative;
 	@include font4(32px,34px,$LarsseitBold,$sub-color);
 }
 

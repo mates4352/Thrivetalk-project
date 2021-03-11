@@ -1,4 +1,4 @@
 .title {
-	@include font4(36px,27px,$LarsseitBold,$sub-color);
-	letter-spacing: -0.006em;
+	@include font4(16px,23px,$LarsseitRegular,$main-color);
+	letter-spacing: 0.06em;
 }

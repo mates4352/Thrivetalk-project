@@ -8,8 +8,6 @@
 	top:31%;
 	left:5%;
 
-	@include font4(16px,23px,$LarsseitRegular,$main-color);
-	letter-spacing: 0.06em;
 
 	@media  screen and (max-width:900px) {
 		position:absolute;

@@ -1,0 +1,65 @@
+.Plans {
+	grid-column: 1 / span 8;
+
+	// .Plans__row
+
+	&__row {
+		margin-top: 25px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	// .Plans__column
+
+	&__column {
+		padding: 50px;
+		min-height: 240px;
+		width: 33.333%;
+
+		@media  screen and (max-width:768px) {
+			width: 50%;
+		}
+		@media  screen and (max-width:576px) {
+			width: 100%;
+		}
+	}
+
+	&__wrapper{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	// .Plans__title
+
+	&__title {
+		margin-right: auto;
+		margin-bottom: 25px;
+		flex-grow: 1;
+
+		@include font4(28px,33px,$LarsseitRegular,$main-color);
+		letter-spacing: -0.03em;
+		text-align: left;
+
+		@media  screen and (max-width:576px) {
+			margin: 0 auto 10px auto;
+			text-align: center;
+		}
+	}
+
+	// .Plans__text
+
+	&__text {
+		max-width: 300px;
+		margin-right: auto;
+
+		@include font2(16px,25px);
+		color: rgba(34, 53, 111, 0.5);
+
+		@media  screen and (max-width:576px) {
+			margin: 0 auto;
+			text-align: center;
+		}
+	}
+}
+

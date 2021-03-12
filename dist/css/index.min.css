@@ -352,7 +352,7 @@ sup {
 }
 
 .header--bg {
-  background: url(../assets/images/header/bg.png) 0 0/73% 100% no-repeat;
+  background: url(../../assets/images/header/bg.png) 0 0/73% 100% no-repeat;
 }
 
 .header {
@@ -698,13 +698,31 @@ sup {
   color: rgba(34,53,111,.5);
 }
 
+.img-know {
+  grid-column: 1/span 2;
+  background: url(../../assets/images/description/description1.jpg) center/cover no-repeat;
+}
+
+.know {
+  grid-column: 3/span 6;
+}
+
+.know__title {
+  font-size: 16px;
+  line-height: 12px;
+}
+
 @supports (-webkit-appearance:none) {
   .header--bg {
-    background: url(../assets/images/header/bg.webp) 0 0/73% 100% no-repeat;
+    background: url(../../assets/images/header/bg.webp) 0 0/73% 100% no-repeat;
   }
 
   .Сategory__column:nth-of-type(3) {
     background-image: url(../../assets/images/Сategory/Nutrition.webp) 100% 100%/cover no-repeat;
+  }
+
+  .img-know {
+    background: url(../../assets/images/description/description1.webp) center/cover no-repeat;
   }
 }
 
@@ -768,7 +786,7 @@ sup {
   }
 
   .header--bg {
-    background: url(../assets/images/header/bg.png) 0 0/100% 100% no-repeat;
+    background: url(../../assets/images/header/bg.png) 0 0/100% 100% no-repeat;
   }
 
   .header__img {
@@ -813,7 +831,7 @@ sup {
 
 @supports (-webkit-appearance:none) {
     .header--bg {
-      background: url(../assets/images/header/bg.webp) 0 0/100% 100% no-repeat;
+      background: url(../../assets/images/header/bg.webp) 0 0/100% 100% no-repeat;
     }
 }
 }

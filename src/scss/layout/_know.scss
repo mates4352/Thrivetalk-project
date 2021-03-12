@@ -1,0 +1,22 @@
+.know {
+	grid-column: 3 / span 6;
+	// .know__title
+
+	&__title {
+		@include font2(16px,12px);
+	}
+
+	// .know__text
+
+	&__text {
+	}
+
+	// .know__span
+
+	&__span {
+	}
+}
+.title {
+}
+.text {
+}

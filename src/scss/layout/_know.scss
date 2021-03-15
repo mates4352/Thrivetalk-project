@@ -1,5 +1,13 @@
 .know {
 	grid-column: 3 / span 6;
+	padding: 100px 0 45px 105px;
+
+	@media  screen and (max-width:768px) {
+		grid-column: 1 / span 8;
+		padding: 50px 25px;
+
+		text-align: center;
+	}
 	// .know__title
 
 	&__title {
@@ -9,14 +17,30 @@
 	// .know__text
 
 	&__text {
+		margin: 225px 0 150px 0;
+		max-width: 690px;
+		padding-right: 15px;
+
+		@include font3(36px,53px,$LarsseitBold);
+		letter-spacing: -0.01em;
+
+		@media  screen and (max-width:768px) {
+			grid-column: 1 / span 8;
+			margin: 50px 0;
+			max-width: auto;
+			padding-right: 0px;
+		}
+	}
+	&__text span{
+		color: $color-logo;
 	}
 
 	// .know__span
 
 	&__span {
+		@include font2(16px,23px);
+		color: #FAB63E;
 	}
 }
-.title {
-}
-.text {
-}
+
+

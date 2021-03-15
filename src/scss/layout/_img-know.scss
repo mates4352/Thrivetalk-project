@@ -1,4 +1,8 @@
 .img-know{
 	grid-column: 1/ span 2;
 	background:url("#{$way-img}/description/description1.jpg") no-repeat center/cover;
+	@media  screen and (max-width:768px) {
+		grid-column: 1 / span 8;
+
+	}
 }

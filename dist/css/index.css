@@ -772,11 +772,32 @@ sup {
 
 .know {
   grid-column: 3/span 6;
+  padding: 100px 0 45px 105px;
 }
 
 .know__title {
   font-size: 16px;
   line-height: 12px;
+}
+
+.know__text {
+  margin: 225px 0 150px 0;
+  max-width: 690px;
+  padding-right: 15px;
+  font-size: 36px;
+  line-height: 53px;
+  font-family: "LarsseitBold";
+  letter-spacing: -0.01em;
+}
+
+.know__text span {
+  color: #62D0DF;
+}
+
+.know__span {
+  font-size: 16px;
+  line-height: 23px;
+  color: #FAB63E;
 }
 
 /*-footer-*/
@@ -925,6 +946,23 @@ sup {
 
   .Plans__column {
     width: 50%;
+  }
+
+  .img-know {
+    grid-column: 1/span 8;
+  }
+
+  .know {
+    grid-column: 1/span 8;
+    padding: 50px 25px;
+    text-align: center;
+  }
+
+  .know__text {
+    grid-column: 1/span 8;
+    margin: 50px 0;
+    max-width: auto;
+    padding-right: 0px;
   }
 
 @supports (-webkit-appearance:none) {

@@ -775,11 +775,6 @@ sup {
   padding: 100px 0 45px 105px;
 }
 
-.know__title {
-  font-size: 16px;
-  line-height: 12px;
-}
-
 .know__text {
   margin: 225px 0 150px 0;
   max-width: 690px;
@@ -800,6 +795,46 @@ sup {
   color: #FAB63E;
 }
 
+.contact {
+  grid-column: 1/span 5;
+  padding: 105px 0 45px 180px;
+}
+
+.contact--bg {
+  background-color: #22356F;
+}
+
+.contact__title {
+  margin: 230px 0px 75px 0px;
+  font-size: 64px;
+  line-height: 94px;
+  font-family: "LarsseitBold";
+  color: #fff;
+}
+
+.contact__text {
+  margin-bottom: 80px;
+  max-width: 600px;
+  padding-right: 25px;
+  font-size: 36px;
+  line-height: 53px;
+  color: #fff;
+}
+
+.contact__span {
+  color: #62D0DF;
+  letter-spacing: 1.8px;
+}
+
+.title--white {
+  color: #fff;
+}
+
+.img-contact {
+  grid-column: 6/span 3;
+  background: url("../../assets/images/description/description2.jpg") no-repeat center/cover;
+}
+
 /*-footer-*/
 
 @supports (-webkit-appearance:none) {
@@ -813,6 +848,10 @@ sup {
 
   .img-know {
     background: url("../../assets/images/description/description1.webp") no-repeat center/cover;
+  }
+
+  .img-contact {
+    background: url("../../assets/images/description/description2.webp") no-repeat center/cover;
   }
 }
 
@@ -961,8 +1000,27 @@ sup {
   .know__text {
     grid-column: 1/span 8;
     margin: 50px 0;
-    max-width: auto;
+    max-width: none;
     padding-right: 0px;
+  }
+
+  .contact {
+    padding: 50px 25px;
+    grid-column: 1/span 8;
+    text-align: center;
+  }
+
+  .contact__title {
+    margin: 50px 0;
+  }
+
+  .contact__text {
+    margin-bottom: 50px;
+    max-width: none;
+  }
+
+  .img-contact {
+    grid-column: 1/span 8;
   }
 
 @supports (-webkit-appearance:none) {

@@ -1,0 +1,47 @@
+.contact {
+	grid-column: 1/span 5;
+	padding:105px 0 45px 180px;
+	@media  screen and (max-width:768px) {
+		padding:50px 25px;
+		grid-column: 1 / span 8;
+		text-align: center;
+	}
+	&--bg{
+		background-color: $main-color;
+	}
+
+	// .contact__title
+	&__title{
+		margin: 230px 0px 75px 0px ;
+		@include font4(64px,94px,$LarsseitBold,$sub-color);
+
+		@media  screen and (max-width:768px) {
+			margin: 50px 0;
+		}
+	}
+	
+	// .contact__text
+
+	&__text {
+		margin-bottom: 80px;
+		max-width: 600px;
+		padding-right: 25px;
+		@include font2(36px,53px);
+		color: $sub-color;
+
+		@media  screen and (max-width:768px) {
+			margin-bottom: 50px;
+			max-width: none;
+		}
+	}
+	// .contact__span
+
+	&__span {
+		color: $color-logo;
+		letter-spacing: 1.8px;
+	}
+	
+}
+.title--white{
+	color: $sub-color;
+}

@@ -1,0 +1,7 @@
+.img-footer{
+	grid-column: 1/ span 3;
+	background:url("#{$way-img}/footer/img.jpg") no-repeat center/cover;
+	@media  screen and (max-width:768px) {
+		grid-column: 1 / span 8;
+	}
+}

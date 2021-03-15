@@ -835,7 +835,56 @@ sup {
   background: url("../../assets/images/description/description2.jpg") no-repeat center/cover;
 }
 
+.img-footer {
+  grid-column: 1/span 3;
+  background: url("../../assets/images/footer/img.jpg") no-repeat center/cover;
+}
+
 /*-footer-*/
+
+.footer {
+  grid-column: 4/span 5;
+  padding: 100px 40px 75px 80px;
+}
+
+.footer__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 33.333%;
+  flex: 0 1 33.333%;
+  padding: 0 45px;
+}
+
+.footer__title {
+  margin-bottom: 60px;
+  font-size: 14px;
+  line-height: 11px;
+  font-family: "LarsseitBold";
+  color: #22356F;
+  letter-spacing: -0.006em;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 23px;
+  letter-spacing: -0.006em;
+  color: rgba(34, 53, 111, 0.5);
+}
 
 @supports (-webkit-appearance:none) {
   .header--bg {
@@ -852,6 +901,10 @@ sup {
 
   .img-contact {
     background: url("../../assets/images/description/description2.webp") no-repeat center/cover;
+  }
+
+  .img-footer {
+    background: url("../../assets/images/footer/img.webp") no-repeat center/cover;
   }
 }
 
@@ -1020,6 +1073,14 @@ sup {
   }
 
   .img-contact {
+    grid-column: 1/span 8;
+  }
+
+  .img-footer {
+    grid-column: 1/span 8;
+  }
+
+  .footer {
     grid-column: 1/span 8;
   }
 

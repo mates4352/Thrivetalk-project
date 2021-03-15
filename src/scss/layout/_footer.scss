@@ -1,2 +1,40 @@
+.footer {
+	grid-column: 4/span 5;
+	padding: 100px 40px 75px 80px;
 
+	@media  screen and (max-width:768px) {
+		grid-column: 1 / span 8;
+	}
 
+	// .footer__row
+
+	&__row {
+		display: flex;
+	}
+
+	// .footer__column
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		flex: 0 1 33.333%;
+		padding: 0 45px;
+	}
+
+	// .footer__title
+
+	&__title {
+		margin-bottom: 60px;
+		@include font4(14px,11px,$LarsseitBold,$main-color);
+		letter-spacing: -0.006em;
+	}
+
+	// .footer__text
+
+	&__text {
+		@include font2(14px,23px);
+		letter-spacing: -0.006em;
+		color: rgba(34, 53, 111, 0.5);
+	}
+}

@@ -1,3 +1,4 @@
+"use strict"
 const burger = document.querySelector('.burger')
 const menu = document.querySelector('.menu')
 const block = document.querySelector('.block')
@@ -53,5 +54,12 @@ burger.addEventListener('click', ()=> {
 
 	if (window.innerWidth < 576) {
 		burger.classList.toggle('w')
+	}
+})
+const footer = document.querySelector('.footer__row')
+
+footer.addEventListener("click", function (event) {
+	if (event.target.classList.contains('footer__title')) {
+		event.target.classList.toggle("active")
 	}
 })

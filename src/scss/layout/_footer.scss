@@ -50,7 +50,7 @@
 
 	&__title {
 		margin-bottom: 60px;
-		@include font4(14px,11px,$LarsseitBold,$main-color);
+		@include font4(14px,14px,$LarsseitBold,$main-color);
 		letter-spacing: -0.006em;
 
 		@media  screen and (max-width:576px) {

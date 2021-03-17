@@ -175,7 +175,7 @@ sup {
   width: 35px;
   height: 25px;
   position: absolute;
-  top: 50%;
+  top: 5%;
   left: 100%;
   z-index: 999;
   cursor: pointer;
@@ -262,17 +262,17 @@ sup {
 .block {
   background: rgba(78,76,66,.801);
   min-width: 360px;
-  height: 50%;
+  min-height: 500px;
   padding: 25px 0;
   position: fixed;
-  top: 25%;
+  top: 5%;
   left: 0;
   z-index: 500;
   -webkit-box-shadow: 0 0 5px #000;
   box-shadow: 0 0 5px #000;
-  -webkit-transform: translateX(-100%);
-  -ms-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-101%);
+  -ms-transform: translateX(-101%);
+  transform: translateX(-101%);
   -webkit-transition: visibility .5s,-webkit-transform .5s;
   transition: transform .5s,visibility .5s,-webkit-transform .5s;
   -o-transition: transform .5s,visibility .5s;
@@ -289,6 +289,7 @@ sup {
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
+  margin-top: 25px;
 }
 
 .header__list.done .header__items:not(:last-of-type) {
@@ -653,7 +654,7 @@ sup {
 }
 
 .Plans__row {
-  margin-top: 25px;
+  padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -663,7 +664,7 @@ sup {
 
 .Plans__column {
   padding: 50px;
-  min-height: 240px;
+  margin-bottom: 50px;
   width: 33.333%;
 }
 
@@ -680,14 +681,12 @@ sup {
 
 .Plans__title {
   font: 28px/33px LarsseitRegular;
-  margin-right: auto;
   margin-bottom: 25px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
   color: #22356f;
   letter-spacing: -.03em;
-  text-align: left;
 }
 
 .Plans__text {
@@ -808,7 +807,7 @@ sup {
 }
 
 .footer__title {
-  font: 14px/11px LarsseitBold;
+  font: 14px/14px LarsseitBold;
   margin-bottom: 60px;
   color: #22356f;
   letter-spacing: -.006em;
@@ -956,9 +955,14 @@ sup {
     min-height: 260px;
   }
 
-  .Plans__column,
   .Сategory__column {
     width: 50%;
+  }
+
+  .Plans__column {
+    min-height: 140px;
+    width: 50%;
+    padding: 0 25px;
   }
 
   .img-know {
@@ -1011,19 +1015,35 @@ sup {
 }
 
 @media screen and (max-width:576px) {
-  .Plans__column,
   .Сategory__column {
     width: 100%;
   }
 
-  .Plans__title {
-    margin: 0 auto 10px;
-    text-align: center;
+  .Plans__column {
+    min-height: 0;
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 0;
   }
 
   .Plans__text {
+    height: 0;
     margin: 0 auto;
     text-align: center;
+    overflow: hidden;
+    -webkit-transition: height .5s;
+    -o-transition: height .5s;
+    transition: height .5s;
+  }
+
+  .Plans__title {
+    margin: 0 auto 25px;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  .Plans__title.active+.Plans__text {
+    height: 100px;
   }
 
   .footer__row {

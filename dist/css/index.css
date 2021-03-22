@@ -347,7 +347,6 @@ sup {
 .page {
   display: grid;
   grid-template-columns: 25% 120px 6.59722% 10.76389% 13.54167% 3.125% 8.33333% 1fr;
-  grid-template-rows: 100vh;
   grid-auto-rows: minmax(260px, auto);
 }
 
@@ -420,6 +419,7 @@ sup {
 .header {
   grid-column: 1/span 8;
   position: relative;
+  min-height: 100vh;
 }
 
 .header__img {

@@ -2,6 +2,6 @@
 	grid-column: 6/ span 3;
 	background:url("#{$way-img}/description/description2.jpg") no-repeat center/cover;
 	@media  screen and (max-width:768px) {
-		grid-column: 1 / span 8;
+		display: none;
 	}
 }

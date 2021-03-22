@@ -7,6 +7,12 @@
 	background: #62D0DF;
 	border-radius: 50px;
 
+	transition:background 500ms ease ;
+
+	&:hover{
+		background:darken($color:#62D0DF,$amount: 20);
+	}
+
 	@media  screen and (max-width:768px) {
 		margin-top: 50px;
 	}

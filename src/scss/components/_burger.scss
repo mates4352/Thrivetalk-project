@@ -114,6 +114,7 @@
 
 .header__list.done .header__items:not(:last-of-type){
 	margin-bottom: 25px;
+	margin-right: 0;
 }
 
 .header__list.done .header__items .header__link{

@@ -26,7 +26,6 @@
 	&__container{
 		height: 100%;
 		padding: 35px 15px 75px 15px;
-		border: 1px solid #000;
 	}
 
 	// .header__top
@@ -103,11 +102,21 @@
 	letter-spacing: 0.1em;
 	background-color: $header-btn-color;
 	border-radius: 0;
+	transition:background 500ms ease ;
+	&:hover{
+		background:darken($color:$header-btn-color,$amount: 20);
+	}
 	}
 
 	&__button--orange{
 		color: $header-btn-color;
 		background-color: transparent;
+		transition: border 500ms ease;
+		&:hover{
+			border: 1px solid $header-btn-color;
+			background:darken($color:transparent,$amount:20);
+		}
+
 	}
 }
 

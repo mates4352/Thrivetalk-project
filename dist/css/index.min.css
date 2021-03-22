@@ -168,6 +168,13 @@ sup {
   text-transform: uppercase;
   background: #62d0df;
   border-radius: 50px;
+  -webkit-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+
+.button:hover {
+  background: #25a5b6;
 }
 
 .burger {
@@ -294,6 +301,7 @@ sup {
 
 .header__list.done .header__items:not(:last-of-type) {
   margin-bottom: 25px;
+  margin-right: 0;
 }
 
 .header__list.done .header__items .header__link {
@@ -370,7 +378,6 @@ sup {
 .header__container {
   height: 100%;
   padding: 35px 15px 75px;
-  border: 1px solid #000;
 }
 
 .header__top {
@@ -438,11 +445,26 @@ sup {
   background: #f9b640;
   letter-spacing: .1em;
   border-radius: 0;
+  -webkit-transition: background .5s;
+  -o-transition: background .5s;
+  transition: background .5s;
+}
+
+.header__button:hover {
+  background: #cd8506;
 }
 
 .header__button--orange {
   background: transparent;
   color: #f9b640;
+  -webkit-transition: border .5s;
+  -o-transition: border .5s;
+  transition: border .5s;
+}
+
+.header__button--orange:hover {
+  border: 1px solid #f9b640;
+  background: rgba(0,0,0,0);
 }
 
 .thrive {
@@ -998,7 +1020,7 @@ sup {
   }
 
   .img-contact {
-    grid-column: 1/span 8;
+    display: none;
   }
 
 @supports (-webkit-appearance:none) {

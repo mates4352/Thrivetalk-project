@@ -941,7 +941,7 @@ sup {
 
 @media (min-width: 991px) {
   :hover {
-    color: red;
+    color: tomato;
   }
 
 @supports (-webkit-appearance:none) {

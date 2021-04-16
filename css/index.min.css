@@ -864,6 +864,12 @@ sup {
   }
 }
 
+@media (min-width:991px) {
+  :hover {
+    color: red;
+  }
+}
+
 @media (max-width:1160px) {
   .container {
     max-width: 992px;

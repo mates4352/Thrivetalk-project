@@ -11,7 +11,6 @@
 @import "base/fonts";
 @import "base/nullstyle";
 
-
 /*-components-*/
 @import "./components/button/_button";
 @import "./components/burger";
@@ -24,7 +23,11 @@
 @import "./components/bem/_text";
 @import "./components/bem/_logo";
 @import "./components/bem/_logo";
-
+@media (min-width: 991px) {
+	&:hover {
+		color: red
+	}
+}
 /*-Header-*/
 @import "layout/_header";
 
@@ -40,11 +43,6 @@
 @import "layout/_contact";
 @import "layout/_img-contact";
 @import "layout/_img-footer";
-
-
-
-
-
 
 /*-footer-*/
 @import "layout/_footer";

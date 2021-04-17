@@ -1,7 +1,5 @@
 @charset "UTF-8";
-
 /*-elements-*/
-
 .header__list.done,
 .thrive__description {
   display: -webkit-box;
@@ -12,70 +10,58 @@
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center
 }
-
 /*-mixins-*/
-
 /*-variable-*/
-
 /*-base-*/
-
 @font-face {
   font-family: 'LarsseitRegular';
   src: url("../../assets/fonts/Larsseit.eot");
   src: local("Larsseit"),url("../../assets/fonts/Larsseit.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/Larsseit.woff2") format("woff2"),url("../../assets/fonts/Larsseit.woff") format("woff"),url("../../assets/fonts/Larsseit.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal;
+  font-style: normal
 }
-
 @font-face {
   font-family: 'LarsseitBold';
   src: url("../../assets/fonts/Larsseit-Bold.eot");
   src: local("Larsseit Bold"),local("Larsseit-Bold"),url("../../assets/fonts/Larsseit-Bold.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/Larsseit-Bold.woff2") format("woff2"),url("../../assets/fonts/Larsseit-Bold.woff") format("woff"),url("../../assets/fonts/Larsseit-Bold.ttf") format("truetype");
   font-weight: bold;
-  font-style: normal;
+  font-style: normal
 }
-
 @font-face {
   font-family: 'LarsseitMedium';
   src: url("../../assets/fonts/Larsseit-Medium.eot");
   src: local("Larsseit Medium"),local("Larsseit-Medium"),url("../../assets/fonts/Larsseit-Medium.eot?#iefix") format("embedded-opentype"),url("../../assets/fonts/Larsseit-Medium.woff2") format("woff2"),url("../../assets/fonts/Larsseit-Medium.woff") format("woff"),url("../../assets/fonts/Larsseit-Medium.ttf") format("truetype");
   font-weight: 500;
-  font-style: normal;
+  font-style: normal
 }
-
 * {
   padding: 0;
   margin: 0;
-  border: 0;
+  border: 0
 }
-
 *,
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
-
 :focus,
 :active {
-  outline: none;
+  outline: none
 }
-
 a:focus,
 a:active {
-  outline: none;
+  outline: none
 }
-
 main,
 nav,
 footer,
 header,
 aside {
-  display: block;
+  display: block
 }
-
 html,
 body {
   height: 100%;
@@ -85,68 +71,55 @@ body {
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "LarsseitBold";
+  font-family: "LarsseitBold"
 }
-
 input,
 button,
 textarea {
-  font-family: inherit;
+  font-family: inherit
 }
-
 input::-ms-clear {
-  display: none;
+  display: none
 }
-
 button {
-  cursor: pointer;
+  cursor: pointer
 }
-
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   border-style: none;
-  padding: 0;
+  padding: 0
 }
-
 [type="checkbox"],
 [type="radio"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0;
+  padding: 0
 }
-
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
-  height: auto;
+  height: auto
 }
-
 [type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
+  -webkit-appearance: none
 }
-
 progress {
-  vertical-align: baseline;
+  vertical-align: baseline
 }
-
 a,
 a:visited {
-  text-decoration: none;
+  text-decoration: none
 }
-
 a:hover {
-  text-decoration: none;
+  text-decoration: none
 }
-
 ul li {
-  list-style: none;
+  list-style: none
 }
-
 img {
-  vertical-align: top;
+  vertical-align: top
 }
-
 h1,
 h2,
 h3,
@@ -154,30 +127,25 @@ h4,
 h5,
 h6 {
   font-size: inherit;
-  font-weight: inherit;
+  font-weight: inherit
 }
-
 code,
 kbd,
 samp {
-  font-size: 1em;
+  font-size: 1em
 }
-
 b,
 strong {
-  font-weight: bolder;
+  font-weight: bolder
 }
-
 sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
-  vertical-align: baseline;
+  vertical-align: baseline
 }
-
 /*-components-*/
-
 .button {
   width: 150px;
   height: 50px;
@@ -191,13 +159,11 @@ sup {
   border-radius: 50px;
   -webkit-transition: background 500ms ease;
   -o-transition: background 500ms ease;
-  transition: background 500ms ease;
+  transition: background 500ms ease
 }
-
 .button:hover {
-  background: #25a5b6;
+  background: #25a5b6
 }
-
 .burger {
   display: none;
   width: 35px;
@@ -209,22 +175,19 @@ sup {
   cursor: pointer;
   -webkit-transition: left 500ms ease,top 500ms ease;
   -o-transition: left 500ms ease,top 500ms ease;
-  transition: left 500ms ease,top 500ms ease;
+  transition: left 500ms ease,top 500ms ease
 }
-
 .block.active {
   display: block;
   -webkit-transform: translate(0);
   -ms-transform: translate(0);
   transform: translate(0);
-  visibility: visible;
+  visibility: visible
 }
-
 .burger.w {
   left: 80%;
-  top: 6%;
+  top: 6%
 }
-
 .burger span,
 .burger::after,
 .burger::before {
@@ -239,31 +202,27 @@ sup {
   transition: top 500ms ease,-webkit-transform 500ms ease;
   -o-transition: top 500ms ease,transform 500ms ease;
   transition: top 500ms ease,transform 500ms ease;
-  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;
+  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease
 }
-
 .burger span {
-  top: 50%;
+  top: 50%
 }
-
 .burger::before {
   top: 100%;
   -webkit-transition: top 500ms ease,-webkit-transform 500ms ease;
   transition: top 500ms ease,-webkit-transform 500ms ease;
   -o-transition: top 500ms ease,transform 500ms ease;
   transition: top 500ms ease,transform 500ms ease;
-  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;
+  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease
 }
-
 .burger::after {
   top: 0%;
   -webkit-transition: top 500ms ease,-webkit-transform 500ms ease;
   transition: top 500ms ease,-webkit-transform 500ms ease;
   -o-transition: top 500ms ease,transform 500ms ease;
   transition: top 500ms ease,transform 500ms ease;
-  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;
+  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease
 }
-
 .burger.active span {
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
@@ -272,9 +231,8 @@ sup {
   transition: top 500ms ease,-webkit-transform 500ms ease;
   -o-transition: top 500ms ease,transform 500ms ease;
   transition: top 500ms ease,transform 500ms ease;
-  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;
+  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease
 }
-
 .burger.active::before {
   top: 40%;
   -webkit-transform: rotate(45deg);
@@ -284,9 +242,8 @@ sup {
   transition: top 500ms ease,-webkit-transform 500ms ease;
   -o-transition: top 500ms ease,transform 500ms ease;
   transition: top 500ms ease,transform 500ms ease;
-  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease;
+  transition: top 500ms ease,transform 500ms ease,-webkit-transform 500ms ease
 }
-
 .burger.active::after {
   top: 40%;
   -webkit-transform: rotate(-45deg);
@@ -294,9 +251,8 @@ sup {
   transform: rotate(-45deg);
   -webkit-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+  transition: all 500ms ease
 }
-
 .block {
   min-width: 360px;
   min-height: 500px;
@@ -315,56 +271,47 @@ sup {
   transition: visibility 500ms ease,-webkit-transform 500ms ease;
   -o-transition: transform 500ms ease,visibility 500ms ease;
   transition: transform 500ms ease,visibility 500ms ease;
-  transition: transform 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease;
+  transition: transform 500ms ease,visibility 500ms ease,-webkit-transform 500ms ease
 }
-
 .menu {
   width: 100%;
-  height: 100%;
+  height: 100%
 }
-
 .header__list.done {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
   height: 100%;
-  margin-top: 25px;
+  margin-top: 25px
 }
-
 .header__list.done .header__items:not(:last-of-type) {
   margin-bottom: 25px;
-  margin-right: 0;
+  margin-right: 0
 }
-
 .header__list.done .header__items .header__link {
   font-size: 30px;
-  line-height: 40px;
+  line-height: 40px
 }
-
 /*-components-BEM-*/
-
 .page {
   display: grid;
   grid-template-columns: 25% 120px 6.59722% 10.76389% 13.54167% 3.125% 8.33333% 1fr;
-  grid-auto-rows: minmax(260px, auto);
+  grid-auto-rows: minmax(260px, auto)
 }
-
 .container {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 15px
 }
-
 .title-two {
   display: inline-block;
   position: relative;
   font-size: 32px;
   line-height: 34px;
   font-family: "LarsseitBold";
-  color: #fff;
+  color: #fff
 }
-
 .title-two::before {
   content: "";
   width: 9px;
@@ -376,63 +323,53 @@ sup {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   background-color: #E9B730;
-  border-radius: 50%;
+  border-radius: 50%
 }
-
 .title {
   font-size: 16px;
   line-height: 23px;
   font-family: "LarsseitRegular";
   color: #22356F;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.06em
 }
-
 .text {
   font-size: 24px;
   line-height: 42px;
   font-family: "LarsseitRegular";
-  color: #22356F;
+  color: #22356F
 }
-
 .logo {
   font-size: 24px;
   line-height: 27px;
   font-family: "LarsseitBold";
   color: #62D0DF;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.035em
 }
-
 .logo {
   font-size: 24px;
   line-height: 27px;
   font-family: "LarsseitBold";
   color: #62D0DF;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.035em
 }
-
 /*-Header-*/
-
 .header--bg {
-  background: url("../../assets/images/header/bg.png")/73% 100% no-repeat;
+  background: url("../assets/images/header/bg.png")/73% 100% no-repeat
 }
-
 .header {
   grid-column: 1/span 8;
   position: relative;
-  min-height: 100vh;
+  min-height: 100vh
 }
-
 .header__img {
   position: absolute;
   top: 0;
-  right: 0;
+  right: 0
 }
-
 .header__container {
   height: 100%;
-  padding: 35px 15px 75px 15px;
+  padding: 35px 15px 75px 15px
 }
-
 .header__top {
   position: relative;
   display: -webkit-box;
@@ -443,25 +380,21 @@ sup {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: center
 }
-
 .header__list {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex
 }
-
 .header__items:not(:last-of-type) {
-  margin-right: 20px;
+  margin-right: 20px
 }
-
 .header__link {
   font-size: 14px;
   line-height: 16px;
-  color: #22356F;
+  color: #22356F
 }
-
 .header__bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -474,9 +407,8 @@ sup {
   -ms-flex-pack: center;
   justify-content: center;
   height: 100%;
-  position: relative;
+  position: relative
 }
-
 .header__title {
   max-width: 500px;
   margin: 50px 0 80px 0;
@@ -484,17 +416,14 @@ sup {
   line-height: 55px;
   font-family: "LarsseitBold";
   color: #22356F;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.035em
 }
-
 .header__text {
-  max-width: 490px;
+  max-width: 490px
 }
-
 .header__buttons {
-  margin-top: 65px;
+  margin-top: 65px
 }
-
 .header__button {
   font-size: 16px;
   line-height: 23px;
@@ -504,40 +433,33 @@ sup {
   border-radius: 0;
   -webkit-transition: background 500ms ease;
   -o-transition: background 500ms ease;
-  transition: background 500ms ease;
+  transition: background 500ms ease
 }
-
 .header__button:hover {
-  background: #cd8506;
+  background: #cd8506
 }
-
 .header__button--orange {
   color: #F9B640;
   background-color: transparent;
   -webkit-transition: border 500ms ease;
   -o-transition: border 500ms ease;
-  transition: border 500ms ease;
+  transition: border 500ms ease
 }
-
 .header__button--orange:hover {
   border: 1px solid #F9B640;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0)
 }
-
 /*-Content-*/
-
 .thrive {
   grid-column: 1/span 5;
-  background-color: #62D0DF;
+  background-color: #62D0DF
 }
-
 .thrive__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100%;
+  height: 100%
 }
-
 .thrive__description {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -545,9 +467,8 @@ sup {
   flex-direction: column;
   max-width: 615px;
   margin: 0 auto;
-  padding: 25px;
+  padding: 25px
 }
-
 .thrive__title {
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -556,55 +477,46 @@ sup {
   line-height: 27px;
   font-family: "LarsseitBold";
   color: #fff;
-  letter-spacing: -0.006em;
+  letter-spacing: -0.006em
 }
-
 .thrive__text {
   font-size: 24px;
   line-height: 35px;
   font-family: "LarsseitBold";
-  color: #fff;
+  color: #fff
 }
-
 .thrive__text-span {
-  font-family: "LarsseitRegular";
+  font-family: "LarsseitRegular"
 }
-
 .thrive-img {
   grid-column: 6/span 3;
-  min-height: 600px;
+  min-height: 600px
 }
-
 .thrive-img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+  object-position: center
 }
-
 .About {
   grid-column: 1/span 8;
-  position: relative;
+  position: relative
 }
-
 .About__title {
   position: absolute;
   top: 31%;
-  left: 5%;
+  left: 5%
 }
-
 .About__wrapper {
   max-width: 580px;
   margin: 0 auto;
-  padding: 150px 0 25px 0;
+  padding: 150px 0 25px 0
 }
-
 .About__text {
-  margin-bottom: 75px;
+  margin-bottom: 75px
 }
-
 .About__help {
   display: block;
   font-size: 16px;
@@ -612,51 +524,42 @@ sup {
   font-family: "LarsseitRegular";
   color: rgba(34, 53, 111, 0.5);
   letter-spacing: 0.06em;
-  text-align: center;
+  text-align: center
 }
-
 .Sport {
-  grid-column: 1/span 8;
+  grid-column: 1/span 8
 }
-
 .Sport__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center
 }
-
 .Sport__column {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 25%;
   flex: 0 1 25%;
   min-height: 360px;
   position: relative;
-  text-align: center;
+  text-align: center
 }
-
 .Sport__column:nth-of-type(1) {
-  background-color: #FFE2DE;
+  background-color: #FFE2DE
 }
-
 .Sport__column:nth-of-type(2) {
-  background-color: #C4E769;
+  background-color: #C4E769
 }
-
 .Sport__column:nth-of-type(3) {
-  background-color: #62D0DF;
+  background-color: #62D0DF
 }
-
 .Sport__column:nth-of-type(4) {
-  background-color: #0052C1;
+  background-color: #0052C1
 }
-
 .Sport_title {
-  margin-top: 95px;
+  margin-top: 95px
 }
-
 .Sport__column::after {
   content: "";
   width: 80%;
@@ -667,13 +570,11 @@ sup {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: #fff
 }
-
 .Сategory {
-  grid-column: 1/span 8;
+  grid-column: 1/span 8
 }
-
 .Сategory__row {
   margin-top: 120px;
   display: -webkit-box;
@@ -683,15 +584,13 @@ sup {
   flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: center
 }
-
 .Сategory__column {
   width: 33.333%;
   min-height: 480px;
-  position: relative;
+  position: relative
 }
-
 .Сategory__column::after {
   content: "";
   width: 80%;
@@ -702,59 +601,48 @@ sup {
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #fff;
+  background-color: #fff
 }
-
 .Сategory__column:nth-of-type(1) {
-  background-color: #22356F;
+  background-color: #22356F
 }
-
 .Сategory__column:nth-of-type(2) {
-  background-color: #0052C1;
+  background-color: #0052C1
 }
-
 .Сategory__column:nth-of-type(3) {
-  background-image: url("../../assets/images/Сategory/Nutrition.jpg") 100% 100%/cover no-repeat;
+  background-image: url("../assets/images/Сategory/Nutrition.jpg") 100% 100%/cover no-repeat
 }
-
 .Сategory__column:nth-of-type(4) {
-  background-color: #62D0DF;
+  background-color: #62D0DF
 }
-
 .Сategory__column:nth-of-type(5) {
-  background-color: #DEE1FF;
+  background-color: #DEE1FF
 }
-
 .Сategory__column:nth-of-type(6) {
-  background-color: #8F00FF;
+  background-color: #8F00FF
 }
-
 .Сategory__title {
   max-width: 160px;
   margin: 125px 0 0 70px;
   padding-left: 15px;
-  text-align: left;
+  text-align: left
 }
-
 .Plans {
-  grid-column: 1/span 8;
+  grid-column: 1/span 8
 }
-
 .Plans__row {
   padding: 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  flex-wrap: wrap
 }
-
 .Plans__column {
   padding: 50px;
   margin-bottom: 50px;
-  width: 33.333%;
+  width: 33.333%
 }
-
 .Plans__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,9 +651,8 @@ sup {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100%;
+  height: 100%
 }
-
 .Plans__title {
   margin-bottom: 25px;
   -webkit-box-flex: 1;
@@ -775,27 +662,23 @@ sup {
   line-height: 33px;
   font-family: "LarsseitRegular";
   color: #22356F;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.03em
 }
-
 .Plans__text {
   max-width: 300px;
   margin-right: auto;
   font-size: 16px;
   line-height: 25px;
-  color: rgba(34, 53, 111, 0.5);
+  color: rgba(34, 53, 111, 0.5)
 }
-
 .img-know {
   grid-column: 1/span 2;
-  background: url("../../assets/images/description/description1.jpg") no-repeat center/cover;
+  background: url("../assets/images/description/description1.jpg") no-repeat center/cover
 }
-
 .know {
   grid-column: 3/span 6;
-  padding: 100px 0 45px 105px;
+  padding: 100px 0 45px 105px
 }
-
 .know__text {
   margin: 225px 0 150px 0;
   max-width: 690px;
@@ -803,77 +686,63 @@ sup {
   font-size: 36px;
   line-height: 53px;
   font-family: "LarsseitBold";
-  letter-spacing: -0.01em;
+  letter-spacing: -0.01em
 }
-
 .know__text span {
-  color: #62D0DF;
+  color: #62D0DF
 }
-
 .know__span {
   font-size: 16px;
   line-height: 23px;
-  color: #FAB63E;
+  color: #FAB63E
 }
-
 .contact {
   grid-column: 1/span 5;
-  padding: 105px 0 45px 180px;
+  padding: 105px 0 45px 180px
 }
-
 .contact--bg {
-  background-color: #22356F;
+  background-color: #22356F
 }
-
 .contact__title {
   margin: 230px 0px 75px 0px;
   font-size: 64px;
   line-height: 94px;
   font-family: "LarsseitBold";
-  color: #fff;
+  color: #fff
 }
-
 .contact__text {
   margin-bottom: 80px;
   max-width: 600px;
   padding-right: 25px;
   font-size: 36px;
   line-height: 53px;
-  color: #fff;
+  color: #fff
 }
-
 .contact__span {
   color: #62D0DF;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.8px
 }
-
 .title--white {
-  color: #fff;
+  color: #fff
 }
-
 .img-contact {
   grid-column: 6/span 3;
-  background: url("../../assets/images/description/description2.jpg") no-repeat center/cover;
+  background: url("../assets/images/description/description2.jpg") no-repeat center/cover
 }
-
 .img-footer {
   grid-column: 1/span 3;
-  background: url("../../assets/images/footer/img.jpg") no-repeat center/cover;
+  background: url("../assets/images/footer/img.jpg") no-repeat center/cover
 }
-
 /*-footer-*/
-
 .footer {
   grid-column: 4/span 5;
-  padding: 100px 40px 75px 80px;
+  padding: 100px 40px 75px 80px
 }
-
 .footer__row {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex
 }
-
 .footer__column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,9 +757,8 @@ sup {
   -webkit-box-flex: 0;
   -ms-flex: 0 1 33.333%;
   flex: 0 1 33.333%;
-  padding: 0 45px;
+  padding: 0 45px
 }
-
 .footer__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -898,109 +766,89 @@ sup {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: column
 }
-
 .footer__title {
   margin-bottom: 60px;
   font-size: 14px;
   line-height: 14px;
   font-family: "LarsseitBold";
   color: #22356F;
-  letter-spacing: -0.006em;
+  letter-spacing: -0.006em
 }
-
 .footer__text {
   font-size: 14px;
   line-height: 23px;
   letter-spacing: -0.006em;
-  color: rgba(34, 53, 111, 0.5);
+  color: rgba(34, 53, 111, 0.5)
 }
-
 @supports (-webkit-appearance:none) {
   .header--bg {
-    background: url("../../assets/images/header/bg.webp")/73% 100% no-repeat;
+    background: url("../assets/images/header/bg.webp")/73% 100% no-repeat
   }
-
   .Сategory__column:nth-of-type(3) {
-    background-image: url("../../assets/images/Сategory/Nutrition.webp") 100% 100%/cover no-repeat;
+    background-image: url("../assets/images/Сategory/Nutrition.webp") 100% 100%/cover no-repeat
   }
-
   .img-know {
-    background: url("../../assets/images/description/description1.webp") no-repeat center/cover;
+    background: url("../assets/images/description/description1.webp") no-repeat center/cover
   }
-
   .img-contact {
-    background: url("../../assets/images/description/description2.webp") no-repeat center/cover;
+    background: url("../assets/images/description/description2.webp") no-repeat center/cover
   }
-
   .img-footer {
-    background: url("../../assets/images/footer/img.webp") no-repeat center/cover;
+    background: url("../assets/images/footer/img.webp") no-repeat center/cover
   }
 }
-
 @media (min-width: 991px) {
   :hover {
-    color: tomato;
+    color: tomato
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media (max-width: 1160px) {
   .container {
-    max-width: 992px;
+    max-width: 992px
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media (max-width: 992px) {
   .container {
-    max-width: 768px;
+    max-width: 768px
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media screen and (max-width: 992px) {
   .Sport__row {
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    flex-wrap: wrap
   }
-
   .Sport__column {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
+    flex: 0 1 50%
   }
-
   .img-footer {
-    grid-column: 1/span 8;
+    grid-column: 1/span 8
   }
-
   .footer {
     grid-column: 1/span 8;
-    padding: 50px;
+    padding: 50px
   }
-
   .footer__column {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 50%;
-    flex: 0 1 50%;
+    flex: 0 1 50%
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media screen and (max-width: 900px) {
   .About__title {
     position: absolute;
@@ -1008,161 +856,131 @@ sup {
     left: 50%;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
+    transform: translateX(-50%)
   }
-
   .About__wrapper {
-    padding: 110px 15px 15px;
+    padding: 110px 15px 15px
   }
-
   .About__text {
     margin-bottom: 45px;
-    text-align: center;
+    text-align: center
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media screen and (max-width: 768px) {
   .button {
-    margin-top: 50px;
+    margin-top: 50px
   }
-
   .burger {
-    display: block;
+    display: block
   }
-
   .logo {
     text-align: center;
-    font-size: 40px;
+    font-size: 40px
   }
-
   .logo {
     text-align: center;
-    font-size: 40px;
+    font-size: 40px
   }
-
   .header--bg {
-    background: url("../../assets/images/header/bg.png")/100% 100% no-repeat;
+    background: url("../assets/images/header/bg.png")/100% 100% no-repeat
   }
-
   .header__img {
-    display: none;
+    display: none
   }
-
   .header__bottom {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    text-align: center;
+    text-align: center
   }
-
   .thrive {
-    grid-column: 1/span 8;
+    grid-column: 1/span 8
   }
-
   .thrive__title {
     -ms-flex-item-align: center;
     align-self: center;
-    text-align: center;
+    text-align: center
   }
-
   .thrive__text {
     -ms-flex-item-align: center;
     align-self: center;
-    text-align: center;
+    text-align: center
   }
-
   .thrive-img {
     grid-column: 1/span 8;
     min-height: 0;
-    height: 300px;
+    height: 300px
   }
-
   .Sport__column {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
-    min-height: 260px;
+    min-height: 260px
   }
-
   .Сategory__column {
-    width: 50%;
+    width: 50%
   }
-
   .Plans__column {
     min-height: 140px;
     width: 50%;
-    padding: 0 25px;
+    padding: 0 25px
   }
-
   .img-know {
-    grid-column: 1/span 8;
+    grid-column: 1/span 8
   }
-
   .know {
     grid-column: 1/span 8;
     padding: 50px 25px;
-    text-align: center;
+    text-align: center
   }
-
   .know__text {
     grid-column: 1/span 8;
     margin: 50px 0;
     max-width: none;
-    padding-right: 0px;
+    padding-right: 0px
   }
-
   .contact {
     padding: 50px 25px;
     grid-column: 1/span 8;
-    text-align: center;
+    text-align: center
   }
-
   .contact__title {
-    margin: 50px 0;
+    margin: 50px 0
   }
-
   .contact__text {
     margin-bottom: 50px;
-    max-width: none;
+    max-width: none
   }
-
   .img-contact {
-    display: none;
+    display: none
   }
-
-@supports (-webkit-appearance:none) {
+  @supports (-webkit-appearance:none) {
     .header--bg {
-      background: url("../../assets/images/header/bg.webp")/100% 100% no-repeat;
+      background: url("../assets/images/header/bg.webp")/100% 100% no-repeat
     }
+  }
 }
-}
-
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 576px
   }
-
-@supports (-webkit-appearance:none) {
-
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
-}
-
 @media screen and (max-width: 576px) {
   .Сategory__column {
-    width: 100%;
+    width: 100%
   }
-
   .Plans__column {
     min-height: 0px;
     width: 100%;
     margin-bottom: 25px;
-    padding: 0px;
+    padding: 0px
   }
-
   .Plans__text {
     height: 0;
     margin: 0 auto;
@@ -1170,62 +988,53 @@ sup {
     overflow: hidden;
     -webkit-transition: height 500ms ease;
     -o-transition: height 500ms ease;
-    transition: height 500ms ease;
+    transition: height 500ms ease
   }
-
   .Plans__title {
     margin: 0 auto 10px auto;
     text-align: center;
-    cursor: pointer;
+    cursor: pointer
   }
-
   .Plans__title {
     margin: 0 auto 25px auto;
-    text-align: center;
+    text-align: center
   }
-
   .Plans__title.active + .Plans__text {
-    height: 100px;
+    height: 100px
   }
-
   .footer__row {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-between
   }
-
   .footer__column {
     -webkit-box-flex: 0;
     -ms-flex: 0 1 100%;
     flex: 0 1 100%;
-    padding: 25px 15px;
+    padding: 25px 15px
   }
-
   .footer__wrapper {
     position: relative;
     visibility: hidden;
     height: 0;
     -webkit-transition: opacity 500ms ease,height 500ms ease;
     -o-transition: opacity 500ms ease,height 500ms ease;
-    transition: opacity 500ms ease,height 500ms ease;
+    transition: opacity 500ms ease,height 500ms ease
   }
-
   .footer__title {
     margin-bottom: 25px;
-    cursor: pointer;
+    cursor: pointer
   }
-
   .footer__title.active + .footer__wrapper {
     visibility: visible;
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
-    opacity: 1;
+    opacity: 1
   }
-
-@supports (-webkit-appearance:none) {
-
-}
+  @supports (-webkit-appearance:none) {
+    
+  }
 }
